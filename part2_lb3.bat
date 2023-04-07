@@ -58,7 +58,6 @@ echo Задаємо параметри для Robocopy
 set source=%2
 set destination=%3
 
-rem set options=/e /purge /dcopy:t /xf Thumbs.db /xf desktop.ini /r:1 /w:1
 set options=/e /xo /purge /copy:DAT /a /r:1 /w:1 /mt
 
 rem Виконуємо синхронізацію
@@ -90,7 +89,6 @@ echo Задаємо параметри для Robocopy
 set source=%3
 set destination=%4
 
-rem set options=/e /purge /dcopy:t /xf Thumbs.db /xf desktop.ini /r:1 /w:1
 set options=/e /xo /purge /copy:DAT /a /r:1 /w:1 /mt
 
 rem Виконуємо синхронізацію
@@ -103,7 +101,7 @@ set destination=%3
 
 set options=/e /xo /purge /copy:DAT /a /r:1 /w:1 /mt
 
-REM Виконуємо синхронізацію
+rem Виконуємо синхронізацію
 echo Синхронізація %source% з %destination% ...
 
 robocopy %source% %destination% %options%
